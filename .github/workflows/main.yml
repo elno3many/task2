@@ -1,1 +1,18 @@
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "login dockerhub "
+        run: docker login --username elnomanyos2 --password dckr_pat_Q2e5hfxkCMUkk_2BcIfyeVgF0W8
+
+      - uses: action/checkout@v3
+
+
 
