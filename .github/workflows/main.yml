@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: "login dockerhub "
-        run: docker login --username elnomanyos2 --password dckr_pat_Q2e5hfxkCMUkk_2BcIfyeVgF0W8
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
 
       - uses: action/checkout@v3
 
